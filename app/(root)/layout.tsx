@@ -6,7 +6,11 @@ type Props = {
 
 const RootLayout = ({children}:Props) => {
   return (
-    <div>{children}</div>
+    <div>
+        
+        {children}
+        
+    </div>
   )
 }
 
