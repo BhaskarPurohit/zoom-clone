@@ -20,7 +20,7 @@ const MeetingTypeList = () => {
 
     const [callDetails, setCallDetails] = useState<Call>()
     const createMeeting = async()=>{
-        if(!client || user) return
+        if(!client || !user) return
 
         try{
           const id = crypto.randomUUID()  //this will create a random id
