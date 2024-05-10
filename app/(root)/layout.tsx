@@ -1,3 +1,4 @@
+import { StreamVideoProvider } from '@stream-io/video-react-sdk'
 import React,{ReactNode} from 'react'
 
 type Props = {
@@ -6,11 +7,10 @@ type Props = {
 
 const RootLayout = ({children}:Props) => {
   return (
-    <div>
-        
-        {children}
-        
-    </div>
+    <main>
+      <StreamVideoProvider>{children}</StreamVideoProvider>
+      
+    </main>
   )
 }
 
